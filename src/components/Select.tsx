@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  useWindowDimensions,
-} from "react-native";
+import { View, Text } from "react-native";
 import ModalDropdown from "react-native-modal-dropdown";
 
 interface Props {
@@ -26,7 +21,7 @@ export const Select = ({
   background = "white",
   data,
 }: Props) => {
-  const [selectedItem, setSelectedItem] = useState(data[0]);
+  // const [selectedItem, setSelectedItem] = useState(data[0]);
 
   return (
     <View
@@ -48,7 +43,6 @@ export const Select = ({
       <ModalDropdown
         style={{
           backgroundColor: background,
-          //   padding: 10,
           paddingHorizontal: 10,
           justifyContent: "center",
           height: 40,
@@ -57,8 +51,6 @@ export const Select = ({
           borderColor: "#F0F0F0",
         }}
         options={data}
-        defaultValue={selectedItem}
-        onSelect={setSelectedItem}
         dropdownStyle={{
           width: width,
           borderWidth: 1,
