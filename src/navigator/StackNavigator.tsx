@@ -13,8 +13,8 @@ export const StackNavigator = () => {
         headerShown: false,
       }}
     >
-      {/* <Stack.Screen name="DeviceScreen" component={DeviceScreen} /> */}
       <Stack.Screen name="Display" component={Display} />
+      <Stack.Screen name="DeviceScreen" component={DeviceScreen} />
     </Stack.Navigator>
   );
 };

@@ -11,8 +11,8 @@ export const Display = () => {
         flex: 1,
       }}
     >
-      {/* <ProtectedScreen /> */}
-      <DeviceInfoScreen />
+      <ProtectedScreen />
+      {/* <DeviceInfoScreen /> */}
     </View>
   );
 };
