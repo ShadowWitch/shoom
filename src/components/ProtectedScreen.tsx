@@ -27,8 +27,7 @@ export const ProtectedScreen = ({ navigation, route }: Props) => {
           source={require("../../assets/videos/demo.mp4")}
           rate={1.0}
           volume={1.0}
-          // isMuted={false}
-          isMuted={true}
+          isMuted={false}
           resizeMode={ResizeMode.COVER}
           shouldPlay
           isLooping
