@@ -1,0 +1,359 @@
+[
+    {
+        "id": "1",
+        "name": "SAMSUNG A14",
+        "brand": "SAMSUNG",
+        "model": "A14",
+        "regular_price": 5999.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Mediatek MT6769 Helio G80 (12 nm)",
+            "ram": "4GB",
+            "camera": "50MP + 13MP",
+            "storage": "128 GB",
+            "display": "6.6 pulgadas PLS LCD 1080x2048",
+            "connection": "2G, 3G, 4G, 5G",
+            "battery": "5000mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "2",
+        "name": "HONOR MAGIC5 LITE",
+        "brand": "HONOR",
+        "model": "MAGIC5 LITE",
+        "regular_price": 9699.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Qualcomm SM6375 Snapdragon 695 5G (6 nm)",
+            "ram": "8GB",
+            "camera": "64MP + 5MP + 2MP + 6MP",
+            "storage": "256 GB",
+            "display": "6.7 pulgadas AMOLED 1080x2400",
+            "connection": "2G, 3G, 4G, 5G",
+            "battery": "5100mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "3",
+        "name": "MOTOROLA G53",
+        "brand": "MOTOROLA",
+        "model": "G53",
+        "regular_price": 5999.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Qualcomm SM4350-AC Snapdragon 480+ 5G (8 nm)",
+            "ram": "6GB",
+            "camera": "50MP + 8MP",
+            "storage": "128 GB",
+            "display": "6.53 pulgadas IPS-LCD 1600x720",
+            "connection": "2G, 3G, 4G, 5G",
+            "battery": "5000mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "4",
+        "name": "HONOR X6",
+        "brand": "HONOR",
+        "model": "X6",
+        "regular_price": 4999.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Mediatek MT6762G Helio G25 (12 nm)",
+            "ram": "4GB",
+            "camera": "50MP + SELFIE",
+            "storage": "64GB",
+            "display": "6.5 pulgadas LCD 720x1600",
+            "connection": "2G, 3G, 4G",
+            "battery": "5000mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "19",
+        "name": "Moto E13",
+        "brand": "Motorola",
+        "model": "Moto E13NGO",
+        "regular_price": 2699.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+            "ram": "6GB",
+            "camera": "13MP + 5MP",
+            "storage": "64GB",
+            "display": "6.5 inches, 720x1600",
+            "connection": "2G, 3G, 4G",
+            "battery": "5000 mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "5",
+        "name": "MOTOROLA E22",
+        "brand": "MOTOROLA",
+        "model": "E22",
+        "regular_price": 3499.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Mediatek MT6765V/CB Helio G37 (12 nm)",
+            "ram": "4GB",
+            "camera": "16MP + 2MP + 5MP",
+            "storage": "128 GB",
+            "display": "6.5 pulgadas LCD 720x1600",
+            "connection": "2G, 3G, 4G",
+            "battery": "4020mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "6",
+        "name": "HONOR X7A",
+        "brand": "HONOR",
+        "model": "X7A",
+        "regular_price": 5499.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Mediatek MT6765H Helio G37 (12 nm)",
+            "ram": "6GB",
+            "camera": "50MP + 8MP",
+            "storage": "128 GB",
+            "display": "6.7 pulgadas LCD TFT LED 720x1600",
+            "connection": "2G, 3G, 4G, 5G",
+            "battery": "5100mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "7",
+        "name": "SAMSUNG A24",
+        "brand": "SAMSUNG",
+        "model": "A24",
+        "regular_price": 6999.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Mediatek MT8781 Helio G99 (6nm)",
+            "ram": "4GB",
+            "camera": "50MP + 13MP",
+            "storage": "128 GB",
+            "display": "6.5 pulgadas Super Amoled 1080x2340",
+            "connection": "2G, 3G, 4G",
+            "battery": "5000 mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "8",
+        "name": "REDMI NOTE 12S",
+        "brand": "XIAOMI",
+        "model": "REDMI NOTE 12S",
+        "regular_price": 9399.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Mediatek Helio G96 (12 nm)",
+            "ram": "8GB",
+            "camera": "108MP + 8MP",
+            "storage": "256 GB",
+            "display": "6.43 pulgadas Amoled 2800x1080",
+            "connection": "2G, 3G, 4G",
+            "battery": "5000mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "9",
+        "name": "HONOR X7A",
+        "brand": "HONOR",
+        "model": "X7A",
+        "regular_price": 5499.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Mediatek MT6765H Helio G37 (12 nm)",
+            "ram": "6GB",
+            "camera": "50MP + 5MP + 2MP + 2MP",
+            "storage": "128 GB",
+            "display": "6.7 pulgadas LCD 1600x720",
+            "connection": "2G, 3G, 4G, 5G",
+            "battery": "5230mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "10",
+        "name": "SAMSUNG A24",
+        "brand": "SAMSUNG",
+        "model": "A24",
+        "regular_price": 6999.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Mediatek MT8781 Helio G99 (6nm)",
+            "ram": "4GB",
+            "camera": "50MP + 13MP",
+            "storage": "128 GB",
+            "display": "6.5 pulgadas Super Amoled 1080x2340",
+            "connection": "2G, 3G, 4G",
+            "battery": "5000 mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "11",
+        "name": "SAMSUNG A34",
+        "brand": "SAMSUNG",
+        "model": "A34",
+        "regular_price": 11599.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Mediatek MT6877V Dimensity 1080 (6 nm)",
+            "ram": "8GB",
+            "camera": "48MP + 13MP",
+            "storage": "256 GB",
+            "display": "6.6 pulgadas Super Amoled 1080x2340",
+            "connection": "2G, 3G, 4G, 5G",
+            "battery": "5000 mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "12",
+        "name": "SAMSUNG A14",
+        "brand": "SAMSUNG",
+        "model": "A14",
+        "regular_price": 5999.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Mediatek MT6769 Helio G80 (12 nm) - Version A",
+            "ram": "4GB",
+            "camera": "50MP + 13MP",
+            "storage": "128 GB",
+            "display": "6.6 pulgadas PLS LCD 1080x2408",
+            "connection": "2G, 3G, 4G, 5G",
+            "battery": "5000 mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "13",
+        "name": "HONOR MAGIC5 LITE",
+        "brand": "HONOR",
+        "model": "MAGIC5 LITE",
+        "regular_price": 9699.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+            "ram": "8GB",
+            "camera": "64MP + 5MP + 2MP + 16MP",
+            "storage": "256 GB",
+            "display": "6.67 pulgadas Amoled 1080x2400",
+            "connection": "2G, 3G, 4G, 5G",
+            "battery": "5000 mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "14",
+        "name": "SAMSUNG A04",
+        "brand": "SAMSUNG",
+        "model": "A04",
+        "regular_price": 3199.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Mediatek MT6765 Helio P35 (12nm)",
+            "ram": "3GB",
+            "camera": "50MP + 2MP + 5MP",
+            "storage": "32 GB",
+            "display": "6.5 pulgadas PLS LCD 720x1600",
+            "connection": "2G, 3G, 4G",
+            "battery": "5000 mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    },
+    {
+        "id": "16",
+        "name": "IPHONE 11",
+        "brand": "APPLE",
+        "model": "IPHONE 11",
+        "regular_price": 16499.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Apple A13 Bionic (7 nm+)",
+            "ram": "4GB",
+            "camera": "12MP + 12MP",
+            "storage": "64 GB",
+            "display": "6.1 pulgadas Liquid Retina HD 1792x828",
+            "connection": "2G, 3G, 4G",
+            "battery": "3110 mAh",
+            "ports": [
+                "Lightning, USB 2.0"
+            ]
+        }
+    },
+    {
+        "id": "18",
+        "name": "MOTOROLLA G53",
+        "brand": "MOTOROLA",
+        "model": "G53",
+        "regular_price": 5999.0,
+        "offer_price": 0,
+        "picture": "",
+        "features": {
+            "cpu": "Qualcomm SM4350-AC Snapdragon 480+ 5G (8 nm)",
+            "ram": "6GB",
+            "camera": "50MP + 8MP",
+            "storage": "128GB",
+            "display": "6.53 pulgadas IPS-LCD 1600x720",
+            "connection": "2G, 3G, 4G, 5G",
+            "battery": "5000mAh",
+            "ports": [
+                "USB tipo C"
+            ]
+        }
+    }
+]
