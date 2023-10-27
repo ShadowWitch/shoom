@@ -4,12 +4,14 @@ import { StyleSheet, ScrollView } from "react-native";
 import { StackNavigator } from "./src/navigator/StackNavigator";
 
 import { NavigationContainer } from "@react-navigation/native";
+import InactivityDetectionScreen from "./src/components/InactivityDetectionScreen";
 
 export default function App() {
   return (
     <>
       <NavigationContainer>
         <StackNavigator />
+        <InactivityDetectionScreen />
       </NavigationContainer>
     </>
   );
