@@ -1,9 +1,17 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TouchableWithoutFeedback } from "react-native";
 import { ProtectedScreen } from "../components/ProtectedScreen";
-import { DeviceInfoScreen } from "../components/DeviceInfoScreen";
+import {
+  DeviceInfoScreen,
+  PropsDeviceInfo,
+} from "../components/DeviceInfoScreen";
+import { StackScreenProps } from "@react-navigation/stack";
 
-export const Display = () => {
+interface Props extends StackScreenProps<any, any> {}
+
+export const Display = ({ route, navigation }: Props) => {
+  const { params } = route;
+
   return (
     <View
       style={{
@@ -11,8 +19,9 @@ export const Display = () => {
         flex: 1,
       }}
     >
-      <ProtectedScreen />
-      {/* <DeviceInfoScreen /> */}
+      {/* <ProtectedScreen /> */}
+
+      {/* <DeviceInfoScreen {...(params as PropsDeviceInfo)} /> */}
     </View>
   );
 };

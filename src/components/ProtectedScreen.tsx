@@ -2,37 +2,39 @@ import React from "react";
 
 import { View, Text, TouchableOpacity } from "react-native";
 import { Video, ResizeMode } from "expo-av";
-import { Button } from "./Button";
+import { StackScreenProps } from "@react-navigation/stack";
 
-interface Prueba {
-  isPlaying: string;
-}
-
-export const ProtectedScreen = () => {
-  const video = React.useRef(null);
-  const [status, setStatus] = React.useState({});
-
+interface Props extends StackScreenProps<any, any> {}
+export const ProtectedScreen = ({ navigation, route }: Props) => {
   return (
-    <View
+    <TouchableOpacity
       style={{
         flex: 1,
       }}
+      onPress={() =>
+        navigation.navigate("DeviceInfoScreen", { ...route.params })
+      }
     >
-      <Video
+      <View
         style={{
           flex: 1,
-          backgroundColor: "red",
         }}
-        source={require("../../assets/videos/demo.mp4")}
-        rate={1.0}
-        volume={1.0}
-        // isMuted={false}
-        isMuted={true}
-        resizeMode={ResizeMode.COVER}
-        shouldPlay
-        isLooping
-        useNativeControls={false}
-      />
-    </View>
+      >
+        <Video
+          style={{
+            flex: 1,
+          }}
+          source={require("../../assets/videos/demo.mp4")}
+          rate={1.0}
+          volume={1.0}
+          // isMuted={false}
+          isMuted={true}
+          resizeMode={ResizeMode.COVER}
+          shouldPlay
+          isLooping
+          useNativeControls={false}
+        />
+      </View>
+    </TouchableOpacity>
   );
 };

@@ -1,22 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Image } from "expo-image";
-import {
-  useWindowDimensions,
-  View,
-  Text,
-  ScrollView,
-  SafeAreaView,
-} from "react-native";
+import { useWindowDimensions, View, Text, ScrollView } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { formatMoney } from "../utils/formayMoney";
+import { StackScreenProps } from "@react-navigation/stack";
 
-export const DeviceInfoScreen = () => {
+export interface PropsDeviceInfo extends StackScreenProps<any, any> {}
+
+export const DeviceInfoScreen = ({ route, navigation }: PropsDeviceInfo) => {
+  const { params } = route;
+
   const { top } = useSafeAreaInsets();
 
   const { width, height } = useWindowDimensions();
 
-  const arr = [
-    1, 2, 2, 123, 123, 12, 31, 231, 23, 123, 12312, 3, 123, 123, 123,
-  ];
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate("ProtectedScreen", { ...params });
+    }, 30000);
+  }, []);
 
   return (
     <View
@@ -67,50 +69,324 @@ export const DeviceInfoScreen = () => {
             fontWeight: "500",
           }}
         >
-          HONOR MAGIC5 LITE
+          {params!.phone.name}
         </Text>
 
         <View
           style={{
-            // backgroundColor: "red",
-            marginTop: 10,
-            justifyContent: "flex-start",
-            alignItems: "center",
-            flexDirection: "row",
+            marginBottom: height * 0.12,
           }}
         >
-          <Image
-            style={{
-              height: height * 0.07,
-              width: 50,
-              //   marginTop: height * 0.05,
-              // backgroundColor: "yellow",
-            }}
-            // placeholder={blurhash}
-            source={require("../../assets/images/example/cpu.png")}
-            contentFit="contain"
-            transition={1000}
-          />
           <View
             style={{
-              // backgroundColor: "green",
-              marginHorizontal: width * 0.03,
+              marginTop: 10,
+              justifyContent: "flex-start",
+              alignItems: "center",
+              flexDirection: "row",
             }}
           >
-            <Text
+            <Image
               style={{
-                fontWeight: "300",
+                height: height * 0.07,
+                width: 50,
+              }}
+              source={require("../../assets/images/example/cpu.png")}
+              contentFit="contain"
+              transition={1000}
+            />
+            <View
+              style={{
+                marginHorizontal: width * 0.03,
               }}
             >
-              Procesador
-            </Text>
-            <Text
+              <Text
+                style={{
+                  fontWeight: "300",
+                }}
+              >
+                Procesador
+              </Text>
+              <Text
+                style={{
+                  fontWeight: "700",
+                }}
+              >
+                {params!.phone.features.cpu}
+              </Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              marginTop: 10,
+              justifyContent: "flex-start",
+              alignItems: "center",
+              flexDirection: "row",
+            }}
+          >
+            <Image
               style={{
-                fontWeight: "700",
+                height: height * 0.07,
+                width: 50,
+              }}
+              source={require("../../assets/images/example/ram.png")}
+              contentFit="contain"
+              transition={1000}
+            />
+            <View
+              style={{
+                marginHorizontal: width * 0.03,
               }}
             >
-              PRUeb PRUeb PRUeb PRUeb
-            </Text>
+              <Text
+                style={{
+                  fontWeight: "300",
+                }}
+              >
+                Memoria RAM
+              </Text>
+              <Text
+                style={{
+                  fontWeight: "700",
+                }}
+              >
+                {params!.phone.features.ram}
+              </Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              marginTop: 10,
+              justifyContent: "flex-start",
+              alignItems: "center",
+              flexDirection: "row",
+            }}
+          >
+            <Image
+              style={{
+                height: height * 0.07,
+                width: 50,
+              }}
+              source={require("../../assets/images/example/camera.png")}
+              contentFit="contain"
+              transition={1000}
+            />
+            <View
+              style={{
+                marginHorizontal: width * 0.03,
+              }}
+            >
+              <Text
+                style={{
+                  fontWeight: "300",
+                }}
+              >
+                Camaras
+              </Text>
+              <Text
+                style={{
+                  fontWeight: "700",
+                }}
+              >
+                {params!.phone.features.camera.toString()}
+              </Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              marginTop: 10,
+              justifyContent: "flex-start",
+              alignItems: "center",
+              flexDirection: "row",
+            }}
+          >
+            <Image
+              style={{
+                height: height * 0.07,
+                width: 50,
+              }}
+              source={require("../../assets/images/example/sdcard.png")}
+              contentFit="contain"
+              transition={1000}
+            />
+            <View
+              style={{
+                marginHorizontal: width * 0.03,
+              }}
+            >
+              <Text
+                style={{
+                  fontWeight: "300",
+                }}
+              >
+                Almacenamiento
+              </Text>
+              <Text
+                style={{
+                  fontWeight: "700",
+                }}
+              >
+                {params!.phone.features.storage.toString()}
+              </Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              marginTop: 10,
+              justifyContent: "flex-start",
+              alignItems: "center",
+              flexDirection: "row",
+            }}
+          >
+            <Image
+              style={{
+                height: height * 0.07,
+                width: 50,
+              }}
+              source={require("../../assets/images/example/icondevicewhite.png")}
+              contentFit="contain"
+              transition={1000}
+            />
+            <View
+              style={{
+                marginHorizontal: width * 0.03,
+              }}
+            >
+              <Text
+                style={{
+                  fontWeight: "300",
+                }}
+              >
+                Pantalla
+              </Text>
+              <Text
+                style={{
+                  fontWeight: "700",
+                }}
+              >
+                {params!.phone.features.display}
+              </Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              marginTop: 10,
+              justifyContent: "flex-start",
+              alignItems: "center",
+              flexDirection: "row",
+            }}
+          >
+            <Image
+              style={{
+                height: height * 0.07,
+                width: 50,
+              }}
+              source={require("../../assets/images/example/red.png")}
+              contentFit="contain"
+              transition={1000}
+            />
+            <View
+              style={{
+                marginHorizontal: width * 0.03,
+              }}
+            >
+              <Text
+                style={{
+                  fontWeight: "300",
+                }}
+              >
+                Conexiones
+              </Text>
+              <Text
+                style={{
+                  fontWeight: "700",
+                }}
+              >
+                {params!.phone.features.connection}
+              </Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              marginTop: 10,
+              justifyContent: "flex-start",
+              alignItems: "center",
+              flexDirection: "row",
+            }}
+          >
+            <Image
+              style={{
+                height: height * 0.07,
+                width: 50,
+              }}
+              source={require("../../assets/images/example/bateria.png")}
+              contentFit="contain"
+              transition={1000}
+            />
+            <View
+              style={{
+                marginHorizontal: width * 0.03,
+              }}
+            >
+              <Text
+                style={{
+                  fontWeight: "300",
+                }}
+              >
+                Bateria
+              </Text>
+              <Text
+                style={{
+                  fontWeight: "700",
+                }}
+              >
+                {params!.phone.features.battery}
+              </Text>
+            </View>
+          </View>
+
+          <View
+            style={{
+              marginTop: 10,
+              justifyContent: "flex-start",
+              alignItems: "center",
+              flexDirection: "row",
+            }}
+          >
+            <Image
+              style={{
+                height: height * 0.07,
+                width: 50,
+              }}
+              source={require("../../assets/images/example/usb.png")}
+              contentFit="contain"
+              transition={1000}
+            />
+            <View
+              style={{
+                marginHorizontal: width * 0.03,
+              }}
+            >
+              <Text
+                style={{
+                  fontWeight: "300",
+                }}
+              >
+                Puertos
+              </Text>
+              <Text
+                style={{
+                  fontWeight: "700",
+                }}
+              >
+                {params!.phone.features.ports}
+              </Text>
+            </View>
           </View>
         </View>
       </ScrollView>
@@ -130,7 +406,6 @@ export const DeviceInfoScreen = () => {
         <View
           style={{
             backgroundColor: "black",
-            // borderRadius: 10,
 
             height: height * 0.1,
             width: width,
@@ -156,7 +431,7 @@ export const DeviceInfoScreen = () => {
               fontSize: 20,
             }}
           >
-            L. 9,999.00
+            L. {formatMoney(params!.phone.regular_price)}
           </Text>
         </View>
       </View>

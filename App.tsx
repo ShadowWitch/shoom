@@ -1,5 +1,6 @@
 import "react-native-gesture-handler";
 
+import { StatusBar } from "expo-status-bar";
 import { StyleSheet, ScrollView } from "react-native";
 import { StackNavigator } from "./src/navigator/StackNavigator";
 
@@ -8,6 +9,8 @@ import { NavigationContainer } from "@react-navigation/native";
 export default function App() {
   return (
     <>
+      <StatusBar hidden />
+
       <NavigationContainer>
         <StackNavigator />
       </NavigationContainer>

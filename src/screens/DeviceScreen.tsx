@@ -9,26 +9,28 @@ import RNPickerSelect from "react-native-picker-select";
 
 import { Picker } from "@react-native-picker/picker";
 import { useNavigation } from "@react-navigation/native";
+import { StackScreenProps } from "@react-navigation/stack";
 
 interface DbParser {
   label: string;
   value: string;
 }
 
-export const DeviceScreen = () => {
-  const navigator = useNavigation();
+interface Props extends StackScreenProps<any, any> {}
+
+export const DeviceScreen = ({ navigation }: Props) => {
+  const db: Phone[] = require("../db/db.json");
 
   const { width, height } = useWindowDimensions();
-  const [selectedValue, setSelectedValue] = useState<string | null>(null);
+  const [selectedValue, setSelectedValue] = useState<Phone | null>(db[0]);
   const { top } = useSafeAreaInsets();
-  const db: Phone[] = require("../db/db.json");
 
   const dbParser: DbParser[] = db.map((e, index) => ({
     label: e.name,
     value: e.id,
   }));
 
-  const onChangeSelectItem = (itemSelected: string | null) => {
+  const onChangeSelectItem = (itemSelected: Phone | null) => {
     setSelectedValue(itemSelected);
   };
 
@@ -84,15 +86,18 @@ export const DeviceScreen = () => {
               }}
             >
               {db.map((e, index) => (
-                <Picker.Item label={e.name} value={e.id} key={e.id} />
+                <Picker.Item label={e.name} value={e} key={e.id} />
               ))}
             </Picker>
           </View>
         </View>
 
         <Button
-          // onPress={() => navigator.navigate("DeviceScreen")}
-          onPress={() => navigator.navigate("DeviceScreen")}
+          onPress={() =>
+            navigation.navigate("ProtectedScreen", {
+              phone: selectedValue,
+            })
+          }
           text="Continuar"
           width={width * 0.5}
           marginTop={height * 0.1}
